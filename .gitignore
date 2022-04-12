@@ -1,0 +1,9 @@
+# Dependency directories
+node_modules/
+static/
+# dotenv environment variables file
+.env
+
+# System Files
+.DS_Store
+Thumbs.db
