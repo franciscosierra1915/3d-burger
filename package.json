@@ -3,7 +3,9 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "webpack --config ./bundler/webpack.prod.js",
-    "dev": "webpack serve --config ./bundler/webpack.dev.js"
+    "dev": "webpack serve --config ./bundler/webpack.dev.js",
+    "deploy": "git subtree push --prefix dist origin gh-pages",
+    "force-deploy": "git push origin `git subtree split --prefix dist main`:gh-pages --force"
   },
   "dependencies": {
     "@babel/core": "^7.15.8",
